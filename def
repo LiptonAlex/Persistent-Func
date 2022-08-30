@@ -1,0 +1,10 @@
+def persistence(n):
+    counter = 0
+    str_n = str(n)
+    while len(str_n) != 1:
+        result = 1
+        for str_number in str_n:
+            result *= int(str_number)
+        str_n = str(result)
+        counter += 1
+    return counter
